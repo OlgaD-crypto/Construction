@@ -4,7 +4,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin-top: 78px;
   background-color: var(--main-background-color);
 }
 
@@ -16,16 +16,45 @@ h1 {
 }
 
 .bg-custom {
-  background-color: var(--main-text-color);
+  /* backdrop-filter: blur(4px); */
+  background-color: rgb(188, 143, 143);
 }
 
 .text-bg-custom {
   background-color: var(--main-text-color);
-  opacity: 7;
 }
 
 .font-custom {
   font-family: "Indie Flower", cursive;
   font-size: 35px;
   color: rgb(255, 255, 255, 0.7);
+}
+
+.offcanvas-custom {
+  backdrop-filter: blur(4px);
+  background-color: rgb(188, 143, 143, 0.5);
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.blur {
+  height: 40px;
+  width: 100%;
+  position: sticky;
+  top: 78px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 2px 2px 10px 10px rgba(255, 255, 255, 0);
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 420px) {
+  .blur {
+    top: 50px;
+  }
+  .font-custom {
+    font-size: 22px;
+  }
+
+  body {
+    margin-top: 58px;
+  }
 }
